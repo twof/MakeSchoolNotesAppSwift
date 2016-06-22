@@ -9,6 +9,6 @@
 import UIKit
 
 class ListNotesTableViewCell: UITableViewCell {
-
-
+    @IBOutlet var noteTitleLable: UILabel!
+    @IBOutlet var noteModificationTimeLable: UILabel!
 }
