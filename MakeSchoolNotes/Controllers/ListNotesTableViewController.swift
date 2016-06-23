@@ -10,7 +10,11 @@ import UIKit
 
 class ListNotesTableViewController: UITableViewController {
     
-    var notes = [Note]()
+    var notes = [Note](){
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,11 +52,19 @@ class ListNotesTableViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // 1
         if let identifier = segue.identifier {
-            // 2
             if identifier == "displayNote" {
                 print("Table view cell tapped")
+                
+                // 1
+                let indexPath = tableView.indexPathForSelectedRow!
+                // 2
+                let note = notes[indexPath.row]
+                // 3
+                let displayNoteViewController = segue.destinationViewController as! DisplayNoteViewController
+                // 4
+                displayNoteViewController.note = note
+                
             } else if identifier == "addNote" {
                 print("+ button tapped")
             }
