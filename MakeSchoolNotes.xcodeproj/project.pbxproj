@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24782CE41D1B58EF0079C4EA /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24782CE31D1B58EF0079C4EA /* Note.swift */; };
+		24782CE61D1C8F270079C4EA /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24782CE51D1C8F270079C4EA /* RealmHelper.swift */; };
 		2E4A07941C42F3B0007F415F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07931C42F3B0007F415F /* AppDelegate.swift */; };
 		2E4A07991C42F3B0007F415F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A07971C42F3B0007F415F /* Main.storyboard */; };
 		2E4A079B1C42F3B0007F415F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A079A1C42F3B0007F415F /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		24782CE31D1B58EF0079C4EA /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Note.swift; path = ../Controllers/Note.swift; sourceTree = "<group>"; };
+		24782CE51D1C8F270079C4EA /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmHelper.swift; path = ../Models/RealmHelper.swift; sourceTree = "<group>"; };
 		2E4A07901C42F3B0007F415F /* MakeSchoolNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeSchoolNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4A07931C42F3B0007F415F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E4A07981C42F3B0007F415F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		2E4A07AC1C42F4EB007F415F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				24782CE51D1C8F270079C4EA /* RealmHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				2E4A07AF1C42F539007F415F /* NSDate+convertToString.swift in Sources */,
 				2E4A07AB1C42F497007F415F /* DisplayNoteViewController.swift in Sources */,
 				2E4A07941C42F3B0007F415F /* AppDelegate.swift in Sources */,
+				24782CE61D1C8F270079C4EA /* RealmHelper.swift in Sources */,
 				2E4A07A91C42F40B007F415F /* ListNotesTableViewController.swift in Sources */,
 				24782CE41D1B58EF0079C4EA /* Note.swift in Sources */,
 			);
