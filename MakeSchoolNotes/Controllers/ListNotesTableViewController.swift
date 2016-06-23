@@ -44,6 +44,17 @@ class ListNotesTableViewController: UITableViewController {
         return cell
     }
     
+    // 1
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        // 2
+        if editingStyle == .Delete {
+            // 3
+            notes.removeAtIndex(indexPath.row)
+            // 4
+            tableView.reloadData()
+        }
+    }
+    
     @IBAction func unwindToListNotesViewController(segue: UIStoryboardSegue) {
         
         // for now, simply defining the method is sufficient.
